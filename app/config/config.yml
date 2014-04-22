@@ -7,7 +7,7 @@ imports:
 
 framework:
     #esi:             ~
-    translator:      { fallback: en }
+    translator:      { fallback: %locale% }
     secret:          %secret%
     router:          { resource: "%kernel.root_dir%/config/routing.yml" }
     form:            true
@@ -89,15 +89,10 @@ doctrine_phpcr:
         auto_mapping: true
         auto_generate_proxy_classes: %kernel.debug%
         locales:
-            en:
-                - de
-                - fr
-            de:
-                - en
-                - fr
-            fr:
-                - en
-                - de
+            ru: [en, de, fr]
+            en: [ru, de, fr]
+            de: [ru, en, fr]
+            fr: [ru, en, de]
 
 knp_menu:
     twig: true
@@ -236,6 +231,7 @@ cmf_search:
 lunetics_locale:
     strict_mode: true
     guessing_order:
+        - query
         - cookie
         - router
         - browser

@@ -2,8 +2,19 @@
 
 {% block user_block %}
     {{ locale_switcher(null, null, 'SandboxMainBundle:Admin:switcher_links.html.twig') }}
+
     {% if app.user %}
-        - Welcome {{ app.user.username }} {# <a href="{{ path('fos_user_security_logout') }}">Logout</a> #}
+
+        <span class="btn-group">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                {{ app.user.username }}
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <li><a href="{{ path('fos_user_security_logout') }}">Logout</a></li>
+            </ul>
+        </span>
+
     {% endif %}
 
     {{ parent() }}

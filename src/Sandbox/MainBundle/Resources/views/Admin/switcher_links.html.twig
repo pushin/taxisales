@@ -1,4 +1,13 @@
-Switch to :
-{% for locale in locales %}
-    {% if loop.index > 1 %} | {% endif %}<a href="{{ locale.link }}" title="{{ locale.locale_target_language }}">{{ locale.locale_target_language }}</a>
-{% endfor %}
+<span class="btn-group">
+    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+        {{ current_locale }}
+        <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+        {% for key, locale in locales %}
+            {#{% if loop.index > 1 %} | {% endif %}#}
+            <li><a href="{{ locale.link }}" title="{{ locale.locale_target_language }}">{{ key }}</a></li>
+        {% endfor %}
+    </ul>
+</span>
+
