@@ -23,6 +23,10 @@ class PointType
     private $code;
 
 
+    public function __toString()
+    {
+        return (string) $this->translate()->getName();
+    }
 
     /**
      * Get id

@@ -10,6 +10,8 @@ use Sonata\AdminBundle\Show\ShowMapper;
 
 class PointTypeAdmin extends Admin
 {
+    protected $translationDomain = 'ApplicationTaxiBundle';
+
     /**
      * @param DatagridMapper $datagridMapper
      */
@@ -48,7 +50,7 @@ class PointTypeAdmin extends Admin
         $formMapper
 //            ->add('id')
             ->add('code')
-            ->add('translations', 'a2lix_translations')
+            ->add('translations', 'a2lix_translations', array('translation_domain' => $this->translationDomain))
         ;
     }
 

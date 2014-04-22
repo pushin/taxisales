@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="ru" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="dashboard.cmf">
+        <source>dashboard.cmf</source>
+        <target>Symfony CMF</target>
+      </trans-unit>
+      <trans-unit id="dashboard.label_routing">
+        <source>dashboard.label_routing</source>
+        <target>Route</target>
+      </trans-unit>
+      <trans-unit id="dashboard.label_redirect_routing">
+        <source>dashboard.label_redirect_routing</source>
+        <target>Redirect Route</target>
+      </trans-unit>
+      <trans-unit id="breadcrumb.link_route_list">
+        <source>breadcrumb.link_route_list</source>
+        <target>Routes</target>
+      </trans-unit>
+      <trans-unit id="breadcrumb.link_route_create">
+        <source>breadcrumb.link_route_create</source>
+        <target>Create</target>
+      </trans-unit>
+      <trans-unit id="breadcrumb.link_route_edit">
+        <source>breadcrumb.link_route_edit</source>
+        <target>Edit</target>
+      </trans-unit>
+      <trans-unit id="breadcrumb.link_route_delete">
+        <source>breadcrumb.link_route_delete</source>
+        <target>Delete</target>
+      </trans-unit>
+      <trans-unit id="breadcrumb.link_redirect_route_list">
+        <source>breadcrumb.link_redirect_route_list</source>
+        <target>Redirect Routes</target>
+      </trans-unit>
+      <trans-unit id="breadcrumb.link_redirect_route_create">
+        <source>breadcrumb.link_redirect_route_create</source>
+        <target>Create</target>
+      </trans-unit>
+      <trans-unit id="breadcrumb.link_redirect_route_edit">
+        <source>breadcrumb.link_redirect_route_edit</source>
+        <target>Edit</target>
+      </trans-unit>
+      <trans-unit id="breadcrumb.link_redirect_route_delete">
+        <source>breadcrumb.link_redirect_route_delete</source>
+        <target>Delete</target>
+      </trans-unit>
+      <trans-unit id="filter.label_name">
+        <source>filter.label_name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="list.label_path">
+        <source>list.label_path</source>
+        <target>URL</target>
+      </trans-unit>
+      <trans-unit id="form.group_general">
+        <source>form.group_general</source>
+        <target>Общие</target>
+      </trans-unit>
+      <trans-unit id="form.group_advanced">
+        <source>form.group_advanced</source>
+        <target>Расширенные</target>
+      </trans-unit>
+      <trans-unit id="form.label_parent">
+        <source>form.label_parent</source>
+        <target>Родитель</target>
+      </trans-unit>
+      <trans-unit id="form.label_name">
+        <source>form.label_name</source>
+        <target>Код</target>
+      </trans-unit>
+      <trans-unit id="form.label_variable_pattern">
+        <source>form.label_variable_pattern</source>
+        <target>Шаблон переменных</target>
+      </trans-unit>
+      <trans-unit id="form.help_variable_pattern">
+        <source>form.help_variable_pattern</source>
+        <target>Шаблон в формате {variable}/{more}... Эти поля будут переданы контроллеру, если они присутствуют в параметрах контроллера</target>
+      </trans-unit>
+      <trans-unit id="form.label_content">
+        <source>form.label_content</source>
+        <target>Content</target>
+      </trans-unit>
+      <trans-unit id="form.label_defaults">
+        <source>form.label_defaults</source>
+        <target>Настройки по умолчанию</target>
+      </trans-unit>
+      <trans-unit id="form.label_options">
+        <source>form.label_options</source>
+        <target>Опции</target>
+      </trans-unit>
+      <trans-unit id="form.label_route_name">
+        <source>form.label_route_name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="form.label_uri">
+        <source>form.label_uri</source>
+        <target>URI</target>
+      </trans-unit>
+      <trans-unit id="form.label_route_target">
+        <source>form.label_route_target</source>
+        <target>Route target</target>
+      </trans-unit>
+      <trans-unit id="form.group_routes">
+        <source>form.group_routes</source>
+        <target>Routes</target>
+      </trans-unit>
+      <trans-unit id="form.label_routes">
+        <source>form.label_routes</source>
+        <target>Routes</target>
+      </trans-unit>
+      <trans-unit id="form.label_add_locale_pattern">
+        <source>form.label_add_locale_pattern</source>
+        <target>Добавлять шаблон локализации</target>
+      </trans-unit>
+      <trans-unit id="form.label_add_format_pattern">
+        <source>form.label_add_format_pattern</source>
+        <target>Добавлять шаблон формата</target>
+      </trans-unit>
+      <trans-unit id="form.label_add_trailing_slash">
+        <source>form.label_add_trailing_slash</source>
+        <target>Добавлять замыкающий слеш</target>
+      </trans-unit>
+      <trans-unit id="form.help_add_format_pattern">
+        <source>form.help_options</source>
+        <target>
+            <![CDATA[
+            Локаль: Присоединяет локаль к маршруту, например /{locale}/your/route<br/>
+            Формат: Добавляет формат к маршруту, например /your/route.{format}. Формат по умолчанию - html<br/>
+            Слеш: Добавляет завершающий слеш, например /your/route/
+            ]]>
+        </target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
