@@ -133,7 +133,7 @@ cmf_create:
         role: IS_AUTHENTICATED_ANONYMOUSLY
 
 cmf_seo:
-    title: CMF Sandbox - %%content_title%%
+    title: taxisales - %%content_title%%
     description: The Content Management Framework. %%content_description%%
     sonata_admin_extension: true
 
@@ -208,7 +208,7 @@ sonata_doctrine_phpcr_admin:
 
 sonata_seo:
     page:
-        title: CMF Sandbox
+        title: taxisales
         metas:
             name:
                 keywords: "CMF, Symfony, Routing, Content, PHPCR"
