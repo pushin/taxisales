@@ -1,0 +1,3 @@
+application_taxi_homepage:
+    path:  /hello/{name}
+    defaults: { _controller: ApplicationTaxiBundle:Default:index }
