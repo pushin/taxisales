@@ -30,6 +30,7 @@ sonata_admin:
         # default global templates
         ajax:    SonataAdminBundle::ajax_layout.html.twig
         user_block: SandboxMainBundle:Admin:user_block.html.twig
+        dashboard: ApplicationTaxiBundle:Admin:dashboard.html.twig
     dashboard:
         blocks:
             # display a dashboard block
