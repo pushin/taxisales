@@ -7,7 +7,6 @@ use Knp\DoctrineBehaviors\Model\Translatable\Translatable;
 
 /**
  * @ORM\Entity
- * @ORM\Table(indexes={@ORM\Index(columns={"code"})})
  */
 class PointType
 {
@@ -19,7 +18,7 @@ class PointType
      */
     protected $id;
 
-    /** @ORM\Column(type="string") */
+    /** @ORM\Column(type="string", unique=true) */
     private $code;
 
 
