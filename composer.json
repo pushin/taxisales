@@ -46,7 +46,8 @@
         "sonata-project/doctrine-orm-admin-bundle": "2.2.*",
         "prezent/doctrine-translatable-bundle": "dev-master",
         "a2lix/translation-form-bundle": "2.*@dev",
-        "knplabs/doctrine-behaviors": "1.0.*"
+        "knplabs/doctrine-behaviors": "1.0.*",
+        "doctrine/doctrine-fixtures-bundle": "2.2.*"
     },
     "require-dev": {
         "liip/functional-test-bundle": "1.0.*",
