@@ -66,6 +66,7 @@ sonata_admin:
                 label: ORM
                 items:
                     - taxi.admin.point_type
+                    - taxi.admin.country
 
             users:
                 label: Users

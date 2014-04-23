@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="ru" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="Countries"><source>Countries</source><target>Страны</target></trans-unit>
+      <trans-unit id="Action"><source>Action</source><target>Операции</target></trans-unit>
+      <trans-unit id="Translations"><source>Translations</source><target>Переводы</target></trans-unit>
+      <trans-unit id="Name"><source>Name</source><target>Название</target></trans-unit>
+      <trans-unit id="Country List"><source>Country List</source><target>Страны</target></trans-unit>
+
+    </body>
+  </file>
+</xliff>

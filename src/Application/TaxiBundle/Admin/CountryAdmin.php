@@ -2,15 +2,15 @@
 
 namespace Application\TaxiBundle\Admin;
 
-use Sonata\AdminBundle\Admin\Admin;
+use Doctrine\ORM\Query;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Show\ShowMapper;
 
-class PointTypeAdmin extends Base\TranslatableAdmin
+class CountryAdmin extends Base\TranslatableAdmin
 {
-    protected $translationDomain = 'ApplicationTaxiBundle_Admin_PointType';
+    protected $translationDomain = 'ApplicationTaxiBundle_Admin_Country';
 
     /**
      * @param DatagridMapper $datagridMapper
@@ -19,7 +19,6 @@ class PointTypeAdmin extends Base\TranslatableAdmin
     {
         $datagridMapper
             ->add('id')
-            ->add('code')
         ;
     }
 
@@ -31,7 +30,6 @@ class PointTypeAdmin extends Base\TranslatableAdmin
         $listMapper
             ->add('id')
             ->add('name')
-            ->add('code')
             ->add('_action', 'actions', array(
                 'actions' => array(
                     'edit' => array(),
@@ -47,8 +45,7 @@ class PointTypeAdmin extends Base\TranslatableAdmin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-//            ->add('id')
-            ->add('code')
+            ->add('id')
             ->add('translations', 'a2lix_translations', array('translation_domain' => $this->translationDomain))
         ;
     }
@@ -60,7 +57,7 @@ class PointTypeAdmin extends Base\TranslatableAdmin
     {
         $showMapper
             ->add('id')
-            ->add('code')
         ;
     }
+
 }

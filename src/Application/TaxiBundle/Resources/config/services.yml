@@ -7,8 +7,18 @@ services:
 #        arguments: [@service_id, "plain_value", %parameter%]
 
 
+    sonata.admin.manager.orm:
+        class: Application\TaxiBundle\Admin\Base\ModelManager
+        arguments: [@doctrine]
+
     taxi.admin.point_type:
         class: Application\TaxiBundle\Admin\PointTypeAdmin
-        arguments: [~, Application\TaxiBundle\Entity\PointType, SonataAdminBundle:CRUD]
+        arguments: [~, Application\TaxiBundle\Entity\PointType, SonataAdminBundle:CRUD, @request]
         tags:
             - {name: sonata.admin, manager_type: orm, group: Point, label: PointType}
+
+    taxi.admin.country:
+        class: Application\TaxiBundle\Admin\CountryAdmin
+        arguments: [~, Application\TaxiBundle\Entity\Country, SonataAdminBundle:CRUD, @request]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Countries}
