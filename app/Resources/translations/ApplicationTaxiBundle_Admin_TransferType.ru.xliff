@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="ru" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="TransferTypes"><source>TransferTypes</source><target>Типы трансфера</target></trans-unit>
+      <trans-unit id="Transfer Type List"><source>Transfer Type List</source><target>Типы трансфера</target></trans-unit>
+      <trans-unit id="Description"><source>Description</source><target>Описание</target></trans-unit>
+      <trans-unit id="Luggage Count"><source>Luggage Count</source><target>Кол-во мест багажа</target></trans-unit>
+      <trans-unit id="Person Count"><source>Person Count</source><target>Кол-во человек</target></trans-unit>
+
+      <trans-unit id="Action"><source>Action</source><target>Операции</target></trans-unit>
+      <trans-unit id="Translations"><source>Translations</source><target>Переводы</target></trans-unit>
+      <trans-unit id="Name"><source>Name</source><target>Название</target></trans-unit>
+      <trans-unit id="Active"><source>Active</source><target>Активность</target></trans-unit>
+      <trans-unit id="Created At"><source>Created At</source><target>Создано</target></trans-unit>
+      <trans-unit id="Updated At"><source>Updated At</source><target>Обновлено</target></trans-unit>
+    </body>
+  </file>
+</xliff>

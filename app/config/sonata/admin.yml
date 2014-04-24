@@ -67,6 +67,11 @@ sonata_admin:
                 items:
                     - taxi.admin.point_type
                     - taxi.admin.country
+                    - taxi.admin.currency
+                    - taxi.admin.point
+                    - taxi.admin.route
+                    - taxi.admin.transfer_type
+                    - taxi.admin.transfer
 
             users:
                 label: Users

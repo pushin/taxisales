@@ -9,7 +9,7 @@ use Knp\DoctrineBehaviors\Model\Translatable\Translatable;
 /**
  * @ORM\Entity
  */
-class Point 
+class TransferType 
 {
     use Translatable, Timestampable, CanBeDeactivated;
 
@@ -20,21 +20,15 @@ class Point
      */
     protected $id;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    protected $personCount;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Country")
+     * @ORM\Column(type="integer")
      */
-    protected $country;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="PointType")
-     */
-    protected $type;
-
-    /**
-     * @ORM\Column(type="boolean", nullable=true)
-     */
-    protected $automatic;
+    protected $luggageCount;
 
     public function __toString()
     {
@@ -42,35 +36,35 @@ class Point
     }
 
     /**
-     * @param mixed $automatic
+     * @param mixed $luggageCount
      */
-    public function setAutomatic($automatic)
+    public function setLuggageCount($luggageCount)
     {
-        $this->automatic = $automatic;
+        $this->luggageCount = $luggageCount;
     }
 
     /**
      * @return mixed
      */
-    public function getAutomatic()
+    public function getLuggageCount()
     {
-        return $this->automatic;
+        return $this->luggageCount;
     }
 
     /**
-     * @param mixed $country
+     * @param mixed $personCount
      */
-    public function setCountry($country)
+    public function setPersonCount($personCount)
     {
-        $this->country = $country;
+        $this->personCount = $personCount;
     }
 
     /**
      * @return mixed
      */
-    public function getCountry()
+    public function getPersonCount()
     {
-        return $this->country;
+        return $this->personCount;
     }
 
     /**
@@ -89,25 +83,9 @@ class Point
         return $this->id;
     }
 
-    /**
-     * @param mixed $type
-     */
-    public function setType($type)
-    {
-        $this->type = $type;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getType()
-    {
-        return $this->type;
-    }
-
     public function __call($method, $arguments)
     {
         return $this->proxyCurrentLocaleTranslation($method, $arguments);
     }
 
-} 
+}

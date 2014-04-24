@@ -2,7 +2,9 @@
 
 namespace Application\TaxiBundle\Entity;
 
+use Application\TaxiBundle\DoctrineBehaviors\CanBeDeactivated\CanBeDeactivated;
 use Doctrine\ORM\Mapping as ORM;
+use Knp\DoctrineBehaviors\Model\Timestampable\Timestampable;
 use Knp\DoctrineBehaviors\Model\Translatable\Translatable;
 
 /**
@@ -10,7 +12,7 @@ use Knp\DoctrineBehaviors\Model\Translatable\Translatable;
  */
 class PointType
 {
-    use Translatable;
+    use Translatable, Timestampable, CanBeDeactivated;
     
     /**
      * @ORM\Column(type="integer")

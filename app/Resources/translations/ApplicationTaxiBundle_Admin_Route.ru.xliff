@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="ru" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="Length"><source>Length</source><target>Длина пути</target></trans-unit>
+      <trans-unit id="Time"><source>Time</source><target>Время в пути</target></trans-unit>
+      <trans-unit id="Origin"><source>Origin</source><target>Начальная точка</target></trans-unit>
+      <trans-unit id="Destination"><source>Destination</source><target>Конечная точка</target></trans-unit>
+      <trans-unit id="Action"><source>Action</source><target>Операции</target></trans-unit>
+      <trans-unit id="Translations"><source>Translations</source><target>Переводы</target></trans-unit>
+      <trans-unit id="Name"><source>Name</source><target>Название</target></trans-unit>
+      <trans-unit id="Routes"><source>Routes</source><target>Маршруты</target></trans-unit>
+      <trans-unit id="Route List"><source>Route List</source><target>Маршруты</target></trans-unit>
+      <trans-unit id="Active"><source>Active</source><target>Активность</target></trans-unit>
+      <trans-unit id="Created At"><source>Created At</source><target>Создано</target></trans-unit>
+      <trans-unit id="Updated At"><source>Updated At</source><target>Обновлено</target></trans-unit>
+
+    </body>
+  </file>
+</xliff>

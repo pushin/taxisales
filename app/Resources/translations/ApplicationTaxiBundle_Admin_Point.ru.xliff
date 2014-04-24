@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="ru" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="Action"><source>Action</source><target>Операции</target></trans-unit>
+      <trans-unit id="Translations"><source>Translations</source><target>Переводы</target></trans-unit>
+      <trans-unit id="Name"><source>Name</source><target>Название</target></trans-unit>
+      <trans-unit id="Points"><source>Points</source><target>Пункты</target></trans-unit>
+      <trans-unit id="Point List"><source>Point List</source><target>Пункты</target></trans-unit>
+      <trans-unit id="Active"><source>Active</source><target>Активность</target></trans-unit>
+      <trans-unit id="Type"><source>Type</source><target>Тип</target></trans-unit>
+      <trans-unit id="Country"><source>Country</source><target>Страна</target></trans-unit>
+      <trans-unit id="Created At"><source>Created At</source><target>Создано</target></trans-unit>
+      <trans-unit id="Updated At"><source>Updated At</source><target>Обновлено</target></trans-unit>
+
+    </body>
+  </file>
+</xliff>
