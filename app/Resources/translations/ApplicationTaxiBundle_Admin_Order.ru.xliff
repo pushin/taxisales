@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="ru" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="Orders"><source>Orders</source><target>Заказы</target></trans-unit>
+      <trans-unit id="Order List"><source>Order List</source><target>Заказы</target></trans-unit>
+      <trans-unit id="Prepay"><source>Prepay</source><target>Предоплата</target></trans-unit>
+      <trans-unit id="State"><source>State</source><target>Статус</target></trans-unit>
+      <trans-unit id="Taxi"><source>Taxi</source><target>Служба такси</target></trans-unit>
+      <trans-unit id="Transfer"><source>Transfer</source><target>Трансфер</target></trans-unit>
+
+      <trans-unit id="Action"><source>Action</source><target>Операции</target></trans-unit>
+      <trans-unit id="Translations"><source>Translations</source><target>Переводы</target></trans-unit>
+      <trans-unit id="Name"><source>Name</source><target>Название</target></trans-unit>
+      <trans-unit id="Active"><source>Active</source><target>Активность</target></trans-unit>
+      <trans-unit id="Created At"><source>Created At</source><target>Создано</target></trans-unit>
+      <trans-unit id="Updated At"><source>Updated At</source><target>Обновлено</target></trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -52,3 +52,15 @@ services:
         arguments: [~, Application\TaxiBundle\Entity\Transfer, SonataAdminBundle:CRUD]
         tags:
             - {name: sonata.admin, manager_type: orm, group: admin, label: Transfers}
+
+    taxi.admin.order_state:
+        class: Application\TaxiBundle\Admin\OrderStateAdmin
+        arguments: [~, Application\TaxiBundle\Entity\OrderState, SonataAdminBundle:CRUD, @request]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: OrderStates}
+
+    taxi.admin.order:
+        class: Application\TaxiBundle\Admin\OrderAdmin
+        arguments: [~, Application\TaxiBundle\Entity\Order, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Orders}

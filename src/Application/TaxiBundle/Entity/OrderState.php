@@ -24,5 +24,31 @@ class OrderState
      */
     protected $code;
 
+    public function __toString()
+    {
+        return (string) $this->getName();
+    }
+
+    /**
+     * @param mixed $code
+     */
+    public function setCode($code)
+    {
+        $this->code = $code;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCode()
+    {
+        return $this->code;
+    }
+
+
+    public function __call($method, $arguments)
+    {
+        return $this->proxyCurrentLocaleTranslation($method, $arguments);
+    }
 
 } 

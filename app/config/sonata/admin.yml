@@ -73,6 +73,12 @@ sonata_admin:
                     - taxi.admin.transfer_type
                     - taxi.admin.transfer
 
+            orders:
+                label: Orders
+                items:
+                    - taxi.admin.order
+                    - taxi.admin.order_state
+
             users:
                 label: Users
                 items:
