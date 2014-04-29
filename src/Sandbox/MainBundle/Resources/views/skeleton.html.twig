@@ -19,9 +19,10 @@
             <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
             <![endif]-->
-
             <link rel="stylesheet" href="{{ asset_url }}" media="screen" type="text/css"/>
             {% endstylesheets %}
+
+
 
             {% if is_granted("IS_AUTHENTICATED_ANONYMOUSLY") %}
                 {% include "CmfCreateBundle::includecssfiles.html.twig" %}
@@ -29,7 +30,16 @@
         {% endblock %}
 
         {% block top_scripts %}
+            {% javascripts
+                '@ApplicationTaxiBundle/Resources/public/js/angular/*'
+                '@ApplicationTaxiBundle/Resources/public/js/*'
+            %}
+                <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts %}
         {% endblock %}
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&language={{ app.request.locale }}"></script>
+
     </head>
     <body>
         <div class="container">

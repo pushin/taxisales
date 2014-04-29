@@ -36,10 +36,31 @@ class Point
      */
     protected $automatic;
 
+    /** @ORM\Column(type="string", unique=true, nullable=true) */
+    protected $externalId;
+
     public function __toString()
     {
         return (string) $this->getName();
     }
+
+    /**
+     * @param mixed $externalId
+     */
+    public function setExternalId($externalId)
+    {
+        $this->externalId = $externalId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getExternalId()
+    {
+        return $this->externalId;
+    }
+
+    
 
     /**
      * @param mixed $automatic

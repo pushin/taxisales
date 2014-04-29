@@ -1,0 +1,12 @@
+{% extends sonata_block.templates.block_base %}
+
+{% block block %}
+    <div class="route-calc-form" ng-app="routeCalcFormApp" ng-controller="routeCalcForm">
+        <div>{@ origin @}</div>
+        <div>{@ destination @}</div>
+        Откуда <input class="input-origin-point" type="text" ng-model="test" />
+        Куда <input class="input-destination-point" type="text" />
+        <button ng-disabled="!origin.id || !destination.id">Отправить</button>
+    </div>
+{% endblock %}
+

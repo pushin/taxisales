@@ -1,6 +1,11 @@
 {% extends "SandboxMainBundle::skeleton.html.twig" %}
 
 {% block content %}
+
+
+    {{ sonata_block_render({ 'type': 'taxi.block.route_calc_form' } ) }}
+
+
     <p><em>We are on the homepage which uses a special template</em></p>
 
     {% createphp cmfMainContent as="rdf" %}

@@ -150,6 +150,7 @@ sonata_block:
             contexts:   [admin]
         sonata.user.block.menu:    # used to display the menu in profile pages
         sonata.user.block.account: # used to display menu option (login option)
+        taxi.block.route_calc_form:
     blocks_by_class:
         Symfony\Cmf\Bundle\BlockBundle\Doctrine\Phpcr\RssBlock:
             cache: cmf.block.cache.js_async

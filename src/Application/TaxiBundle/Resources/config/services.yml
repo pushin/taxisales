@@ -64,3 +64,10 @@ services:
         arguments: [~, Application\TaxiBundle\Entity\Order, SonataAdminBundle:CRUD]
         tags:
             - {name: sonata.admin, manager_type: orm, group: admin, label: Orders}
+
+
+    taxi.block.route_calc_form:
+        class: Application\TaxiBundle\Block\RouteCalcForm
+        arguments: [taxi.block.route_calc_form, @templating]
+        tags:
+            - { name: sonata.block }

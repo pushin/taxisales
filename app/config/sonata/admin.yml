@@ -37,21 +37,21 @@ sonata_admin:
 #            - { position: left, type: sonata.admin.block.admin_list }
 #            - { position: left, type: sonata_admin_doctrine_phpcr.tree_block }
         groups:
-#            content:
-#                label: Content
-#                items:
-#                    - cmf_content.admin
-#                    - cmf_block.simple_admin
-#                    - cmf_block.container_admin
-#                    - cmf_block.reference_admin
-#                    - cmf_block.action_admin
-#                    - cmf_block.imagine.slideshow_admin
-#                    - cmf_block.imagine.imagine_admin
-#            routing:
-#                label: URLs
-#                items:
-#                    - cmf_routing.route_admin
-#                    - cmf_routing.redirect_route_admin
+            content:
+                label: Content
+                items:
+                    - cmf_content.admin
+                    - cmf_block.simple_admin
+                    - cmf_block.container_admin
+                    - cmf_block.reference_admin
+                    - cmf_block.action_admin
+                    - cmf_block.imagine.slideshow_admin
+                    - cmf_block.imagine.imagine_admin
+            routing:
+                label: URLs
+                items:
+                    - cmf_routing.route_admin
+                    - cmf_routing.redirect_route_admin
             menu:
                 label: Menu
                 items:
