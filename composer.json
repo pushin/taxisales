@@ -48,7 +48,8 @@
         "a2lix/translation-form-bundle": "2.*@dev",
         "knplabs/doctrine-behaviors": "1.0.*",
         "doctrine/doctrine-fixtures-bundle": "2.2.*",
-        "egeloen/google-map": "1.4.*@dev"
+        "egeloen/google-map": "1.4.*@dev",
+        "sensio/buzz-bundle": "dev-master"
     },
     "require-dev": {
         "liip/functional-test-bundle": "1.0.*",

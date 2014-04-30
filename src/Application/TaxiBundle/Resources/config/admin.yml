@@ -1,0 +1,61 @@
+parameters:
+#    application_taxi.example.class: Application\TaxiBundle\Example
+
+services:
+    sonata.admin.manager.orm:
+        class: Application\TaxiBundle\Admin\Base\ModelManager
+        arguments: [@doctrine]
+
+    taxi.admin.point_type:
+        class: Application\TaxiBundle\Admin\PointTypeAdmin
+        arguments: [~, Application\TaxiBundle\Entity\PointType, SonataAdminBundle:CRUD, @request]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Point, label: PointType}
+
+    taxi.admin.country:
+        class: Application\TaxiBundle\Admin\CountryAdmin
+        arguments: [~, Application\TaxiBundle\Entity\Country, SonataAdminBundle:CRUD, @request]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Countries}
+
+    taxi.admin.currency:
+        class: Application\TaxiBundle\Admin\CurrencyAdmin
+        arguments: [~, Application\TaxiBundle\Entity\Currency, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Currencies}
+
+    taxi.admin.point:
+        class: Application\TaxiBundle\Admin\PointAdmin
+        arguments: [~, Application\TaxiBundle\Entity\Point, SonataAdminBundle:CRUD, @request]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Points}
+
+    taxi.admin.route:
+        class: Application\TaxiBundle\Admin\RouteAdmin
+        arguments: [~, Application\TaxiBundle\Entity\Route, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Routes}
+
+    taxi.admin.transfer_type:
+        class: Application\TaxiBundle\Admin\TransferTypeAdmin
+        arguments: [~, Application\TaxiBundle\Entity\TransferType, SonataAdminBundle:CRUD, @request]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: TransferTypes}
+
+    taxi.admin.transfer:
+        class: Application\TaxiBundle\Admin\TransferAdmin
+        arguments: [~, Application\TaxiBundle\Entity\Transfer, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Transfers}
+
+    taxi.admin.order_state:
+        class: Application\TaxiBundle\Admin\OrderStateAdmin
+        arguments: [~, Application\TaxiBundle\Entity\OrderState, SonataAdminBundle:CRUD, @request]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: OrderStates}
+
+    taxi.admin.order:
+        class: Application\TaxiBundle\Admin\OrderAdmin
+        arguments: [~, Application\TaxiBundle\Entity\Order, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Orders}

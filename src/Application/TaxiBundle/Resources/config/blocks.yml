@@ -1,0 +1,10 @@
+parameters:
+#    application_taxi.example.class: Application\TaxiBundle\Example
+
+services:
+
+    taxi.block.route_calc_form:
+        class: Application\TaxiBundle\Block\RouteCalcForm
+        arguments: [taxi.block.route_calc_form, @templating]
+        tags:
+            - { name: sonata.block }

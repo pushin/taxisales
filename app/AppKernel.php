@@ -83,6 +83,8 @@ class AppKernel extends Kernel
             new A2lix\TranslationFormBundle\A2lixTranslationFormBundle(),
 
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+
+            new Sensio\Bundle\BuzzBundle\SensioBuzzBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

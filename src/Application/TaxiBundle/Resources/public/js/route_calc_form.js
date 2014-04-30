@@ -4,7 +4,7 @@ angular.module('routeCalcFormApp', ['routeCalcFormControllers'])
 });
 
 
-angular.module('routeCalcFormControllers', []).controller('routeCalcForm', ['$scope', function($scope) {
+angular.module('routeCalcFormControllers', []).controller('routeCalcForm', ['$scope', '$http', function($scope, $http) {
 
     $scope.origin = {};
     $scope.destination = {};
@@ -31,16 +31,32 @@ angular.module('routeCalcFormControllers', []).controller('routeCalcForm', ['$sc
                 var place = originAutocomplete.getPlace();
                 console.log(place);
                 $scope.$apply(function() {
-                    $scope.origin = {id: place.id, name: place.name}
+                    $scope.origin = {
+                        id: place.id,
+                        name: place.name,
+                        latitude: place.geometry.location.lat(),
+                        longitude: place.geometry.location.lng()
+                    }
                 });
             });
 
             google.maps.event.addListener(destinationAutocomplete, 'place_changed', function() {
                 var place = destinationAutocomplete.getPlace();
                 $scope.$apply(function() {
-                    $scope.destination = {id: place.id, name: place.name}
+                    $scope.destination = {
+                        id: place.id,
+                        name: place.name,
+                        latitude: place.geometry.location.lat(),
+                        longitude: place.geometry.location.lng()
+                    }
                 });
             });
+
+            $scope.findMaintainableRoute = function() {
+                $http.post($scope.findRouteUrl, { origin: $scope.origin, destination: $scope.destination }).success(function() {
+
+                });
+            }
 
         });
     });

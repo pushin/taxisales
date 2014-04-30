@@ -1,4 +1,6 @@
 composer.phar
+phpunit.phar
+nohup.out
 web/bundles/
 web/js/
 web/css/

@@ -4,9 +4,9 @@
     <div class="route-calc-form" ng-app="routeCalcFormApp" ng-controller="routeCalcForm">
         <div>{@ origin @}</div>
         <div>{@ destination @}</div>
-        Откуда <input class="input-origin-point" type="text" ng-model="test" />
+        Откуда <input class="input-origin-point" type="text" />
         Куда <input class="input-destination-point" type="text" />
-        <button ng-disabled="!origin.id || !destination.id">Отправить</button>
+        <button ng-init="findRouteUrl='{{ path('find_maintainable_route') }}'" ng-click="findMaintainableRoute()" ng-disabled="!origin.id || !destination.id">Отправить</button>
     </div>
 {% endblock %}
 

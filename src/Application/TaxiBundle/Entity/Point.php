@@ -2,9 +2,10 @@
 namespace Application\TaxiBundle\Entity;
 
 use Application\TaxiBundle\DoctrineBehaviors\CanBeDeactivated\CanBeDeactivated;
+use Application\TaxiBundle\DoctrineBehaviors\Translatable\Translatable;
 use Doctrine\ORM\Mapping as ORM;
 use Knp\DoctrineBehaviors\Model\Timestampable\Timestampable;
-use Knp\DoctrineBehaviors\Model\Translatable\Translatable;
+
 
 /**
  * @ORM\Entity
@@ -36,8 +37,21 @@ class Point
      */
     protected $automatic;
 
-    /** @ORM\Column(type="string", unique=true, nullable=true) */
+    /**
+     * @ORM\Column(type="string", unique=true, nullable=true)
+     */
     protected $externalId;
+
+    /**
+     * @ORM\Column(type="float", nullable=true)
+     */
+    protected $latitude;
+
+    /**
+     * @ORM\Column(type="float", nullable=true)
+     */
+    protected $longitude;
+
 
     public function __toString()
     {
@@ -60,7 +74,7 @@ class Point
         return $this->externalId;
     }
 
-    
+
 
     /**
      * @param mixed $automatic
@@ -130,5 +144,38 @@ class Point
     {
         return $this->proxyCurrentLocaleTranslation($method, $arguments);
     }
+
+    /**
+     * @param mixed $latitude
+     */
+    public function setLatitude($latitude)
+    {
+        $this->latitude = $latitude;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLatitude()
+    {
+        return $this->latitude;
+    }
+
+    /**
+     * @param mixed $longitude
+     */
+    public function setLongitude($longitude)
+    {
+        $this->longitude = $longitude;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLongitude()
+    {
+        return $this->longitude;
+    }
+
 
 } 
