@@ -9,10 +9,8 @@ services:
 
     taxi.points:
         class: Application\TaxiBundle\Router\PointManager
-        arguments: [@doctrine.orm.entity_manager, @request]
-        scope: request
+        arguments: [@doctrine.orm.entity_manager, @request=]
 
     taxi.routes:
         class: Application\TaxiBundle\Router\RouteManager
         arguments: [@taxi.points, @doctrine.orm.entity_manager, @taxi.router.direction_finder.google]
-        scope: request

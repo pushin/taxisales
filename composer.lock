@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2ae55097344ceee99c59c39f9cb2f24b",
+    "hash": "1beb9f7b3139d26e9d19064828c4b3e8",
     "packages": [
         {
             "name": "a2lix/translation-form-bundle",
@@ -6063,7 +6063,8 @@
         "prezent/doctrine-translatable-bundle": 20,
         "a2lix/translation-form-bundle": 20,
         "egeloen/google-map": 20,
-        "sensio/buzz-bundle": 20
+        "sensio/buzz-bundle": 20,
+        "jms/serializer-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"

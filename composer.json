@@ -49,7 +49,8 @@
         "knplabs/doctrine-behaviors": "1.0.*",
         "doctrine/doctrine-fixtures-bundle": "2.2.*",
         "egeloen/google-map": "1.4.*@dev",
-        "sensio/buzz-bundle": "dev-master"
+        "sensio/buzz-bundle": "dev-master",
+        "jms/serializer-bundle": "0.13.*@dev"
     },
     "require-dev": {
         "liip/functional-test-bundle": "1.0.*",
