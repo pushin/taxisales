@@ -1,3 +1,8 @@
 application_taxi_homepage:
     path:  /hello/{name}
     defaults: { _controller: ApplicationTaxiBundle:Default:index }
+
+find_maintainable_route:
+    path: /api/route/findMaintainableRoute
+    defaults: { _controller: ApplicationTaxiBundle:Route:findMaintainableRoute }
+    methods: [POST]
