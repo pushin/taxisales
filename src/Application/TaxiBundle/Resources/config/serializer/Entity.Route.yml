@@ -1,0 +1,6 @@
+Application\TaxiBundle\Entity\Route:
+    exclusion_policy: ALL
+    properties:
+        id:
+        length:
+        time:

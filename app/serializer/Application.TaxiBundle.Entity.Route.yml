@@ -1,0 +1,3 @@
+Application\TaxiBundle\Entity\Route:
+    exclusion_policy: NONE
+    exclude: true

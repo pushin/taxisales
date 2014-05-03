@@ -53,8 +53,8 @@ angular.module('routeCalcFormControllers', []).controller('routeCalcForm', ['$sc
             });
 
             $scope.findMaintainableRoute = function() {
-                $http.post($scope.findRouteUrl, { origin: $scope.origin, destination: $scope.destination }).success(function() {
-
+                $http.post($scope.findRouteUrl, { origin: $scope.origin, destination: $scope.destination }).success(function(response) {
+                    console.log(response);
                 });
             }
 

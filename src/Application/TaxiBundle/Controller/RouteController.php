@@ -3,6 +3,7 @@
 namespace Application\TaxiBundle\Controller;
 
 use Application\TaxiBundle\Router\RouteManager;
+use JMS\Serializer\SerializationContext;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -16,7 +17,7 @@ class RouteController extends Controller
 
         $route = $this->getRouteManager()->getRoute($origin, $destination);
 
-        return new Response($route->getId());
+        return new Response($this->getSerializer()->serialize($route, 'json'));
     }
 
     /**
@@ -25,5 +26,14 @@ class RouteController extends Controller
     protected function getRouteManager()
     {
         return $this->get('taxi.routes');
+    }
+
+    /**
+     * @return \JMS\Serializer\Serializer
+     */
+    protected function getSerializer()
+    {
+//        return $this->get('jms_serializer');
+        return $this->get('serializer');
     }
 }

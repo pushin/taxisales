@@ -397,3 +397,12 @@ a2lix_translation_form:
     locales: %locales%       # [1]
     manager_registry: doctrine      # [3]
     templating: "A2lixTranslationFormBundle::default.html.twig"      # [4]
+
+
+jms_serializer:
+    metadata:
+        auto_detection: true
+        directories:
+            ApplicationTaxiBundle:
+                namespace_prefix: "Application\\TaxiBundle"
+                path: "@ApplicationTaxiBundle/Resources/config/serializer"
