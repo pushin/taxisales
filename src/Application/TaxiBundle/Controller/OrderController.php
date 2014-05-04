@@ -10,8 +10,13 @@ use Symfony\Component\HttpFoundation\Response;
 
 class OrderController extends Controller
 {
-    public function indexAction(Request $request)
+    public function blockAction(Request $request)
     {
-        return new Response(123);
+        $em = $this->get('doctrine')->getManager();
+        $route = $em->find('ApplicationTaxiBundle:Route', $request->get('route'));
+
+        return $this->render('ApplicationTaxiBundle:Order:block.html.twig', array(
+            'route' => $route,
+        ));
     }
 }

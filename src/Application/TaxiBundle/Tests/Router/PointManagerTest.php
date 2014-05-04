@@ -4,6 +4,7 @@ namespace Application\TaxiBundle\Tests\Router;
 use Application\TaxiBundle\Entity\Point;
 use Application\TaxiBundle\Router\PointManager;
 use Application\TaxiBundle\Tests\ContainerAwareUnitTestCase;
+use Symfony\Component\HttpFoundation\Request;
 
 class PointManagerTest extends RouterTestCase
 {
@@ -11,7 +12,10 @@ class PointManagerTest extends RouterTestCase
     {
         $this->truncatePoints();
 
-        $points = new PointManager($this->get('doctrine')->getManager(), 'en');
+        $request = new Request();
+        $request->setLocale('en');
+
+        $points = new PointManager($this->get('doctrine')->getManager(), $request);
         $point = $points->retrievePoint(array('id' => '1', 'name' => 'Test'));
 
         $this->assertEquals(1, $point->getExternalId());
@@ -20,7 +24,8 @@ class PointManagerTest extends RouterTestCase
 
         $pointId = $point->getId();
 
-        $points = new PointManager($this->get('doctrine')->getManager(), 'ru');
+        $request->setLocale('ru');
+        $points = new PointManager($this->get('doctrine')->getManager(), $request);
         $point = $points->retrievePoint(array('id' => '1', 'name' => 'Test ru'));
 
         $this->assertEquals($pointId, $point->getId());
@@ -30,7 +35,7 @@ class PointManagerTest extends RouterTestCase
         $anotherPoint = $points->retrievePoint(array('id' => '2', 'name' => 'TestAnother ru'));
 
         $this->assertNotEquals($anotherPoint->getId(), $pointId);
-
+die;
         $this->truncatePoints();
     }
 }

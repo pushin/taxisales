@@ -6,3 +6,7 @@ find_maintainable_route:
     path: /api/route/findMaintainableRoute
     defaults: { _controller: ApplicationTaxiBundle:Route:findMaintainableRoute }
     methods: [POST]
+
+#route_order:
+#    path: /{_locale}/order/{route}
+#    defaults: { _controller: ApplicationTaxiBundle:Order:index }
